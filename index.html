@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Profile</title>
+    <style>
+        body{
+            display: flex;
+            background-color: rgb(188, 188, 188);
+            justify-content: center;
+            
+        }
+
+        #card{
+            width: 270px;
+            height: 230px;
+            border-radius: 10px;
+            box-shadow: 0px 1px 3px;
+            text-align: center;
+            padding: 10px;
+            background-color: aliceblue;
+            margin: 200px;
+        }
+
+        #card img{
+            width: 100px;
+            border-radius: 50px;
+            object-fit: cover;
+        }
+
+        #card p{
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <div id="card">
+        
+    </div>
+    <script>
+        let card = document.getElementById("card");
+        
+        const imga = document.createElement("img");
+        imga.src = "screenshot.jpeg";
+        const title = document.createElement("h2");
+        title.textContent = "John Kaisen";
+        const job = document.createElement("p");
+        job.textContent = "Web designer";
+        const place = document.createElement("p");
+        place.textContent = "Pheonix, AZ";
+
+        card.appendChild(imga);
+        card.appendChild(title);
+        card.appendChild(job);
+        card.appendChild(place)
+    </script>
+</body>
+</html>
